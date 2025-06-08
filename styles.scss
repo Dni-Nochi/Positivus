@@ -1,1 +1,11 @@
 @use './helpers/' as *;
+
+@use './Styles-for-index/content';
+@use './Styles-for-index/navigationBar';
+@use './Styles-for-index/headerInfo';
+
+@use './Styles-for-index/article';
+
+@use './normalize';
+@use './Fonts';
+@use './colors';
