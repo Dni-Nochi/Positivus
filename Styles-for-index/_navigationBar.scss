@@ -12,10 +12,11 @@
   transition: all 0.3s linear;
 }
 
-.navigation-bar {
+.navigation__bar {
   display: flex;
   justify-content: space-between;
   font-family: 'Space Grotesk';
+  padding-top: rem(30);
 
   &-ol {
     display: flex;
@@ -29,7 +30,7 @@
   }
 
   &-button:hover {
-    color: var(--color-white);
+    color: var(--color-grey);
     background-color: var(--color-dark);
   }
 }

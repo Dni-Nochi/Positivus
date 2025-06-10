@@ -1,0 +1,41 @@
+@use '../helpers/' as *;
+
+.info {
+  &-proposal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(186);
+    font-family: 'Space Grotesk';
+    width: rem(1240);
+    height: rem(347);
+    border-radius: rem(45);
+    background-color: var(--color-grey);
+  }
+
+  &-proposal h2 {
+    font-size: rem(28);
+  }
+
+  &-proposal p {
+    font-size: rem(20);
+  }
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: rem(26);
+  }
+
+  &-btn {
+    cursor: pointer;
+    font-family: 'Space Grotesk';
+    width: rem(288);
+    height: rem(68);
+    color: var(--color-grey);
+    border: none;
+    border-radius: rem(14);
+    font-size: rem(16);
+    background-color: var(--color-dark);
+  }
+}
