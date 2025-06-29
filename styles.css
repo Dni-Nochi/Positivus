@@ -7,20 +7,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Space Grotesk";
   min-height: 20.375rem;
-  color: var(--color-white);
-  background-color: var(--color-dark);
   padding-block: 3.75rem;
   border-radius: 2.8125rem;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  font-family: "Space Grotesk";
 }
 .studies__block :last-child {
   border: none;
 }
 .studies__block-info {
-  font-size: 1.0625rem;
   padding-left: 4rem;
   padding-right: 4rem;
+  font-size: 1.0625rem;
   border-right: 0.0625rem solid var(--color-white);
 }
 .studies__block-info p {
@@ -29,9 +29,9 @@
 .studies__block-link {
   display: flex;
   align-items: end;
-  cursor: pointer;
   padding-top: 1.25rem;
   padding-bottom: 1.4375rem;
+  cursor: pointer;
 }
 .studies__block-link p {
   padding-right: 0.9375rem;
@@ -39,12 +39,12 @@
 }
 
 .process__block {
-  font-family: "Space Grotesk";
+  height: 10rem;
+  margin-bottom: 1.875rem;
   border: 0.0625rem solid var(--color-black);
   border-bottom: 0.3125rem solid;
   border-radius: 2.8125rem;
-  height: 10rem;
-  margin-bottom: 1.875rem;
+  font-family: "Space Grotesk";
 }
 .process__block-title {
   display: flex;
@@ -65,11 +65,63 @@
   font-size: 1.875rem;
 }
 .process__block-btn {
+  width: 3.625rem;
+  height: 3.625rem;
   cursor: pointer;
   border-radius: 3.125rem;
   background-color: var(--color-white);
-  width: 3.625rem;
-  height: 3.625rem;
+}
+
+.employees {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2.5rem;
+  font-family: "Space Grotesk";
+}
+.employees__block {
+  width: 24.1875rem;
+  height: 20.6875rem;
+  border: 0.0625rem solid var(--color-black);
+  border-bottom: 0.3125rem solid;
+  border-radius: 2.8125rem;
+}
+.employees__info {
+  position: relative;
+  display: flex;
+  padding: 2.5rem 2.1875rem 1.75rem 2.1875rem;
+}
+.employees__info::after {
+  position: absolute;
+  bottom: 0;
+  left: 9%;
+  width: 19.8125rem;
+  border: 0.0625rem solid var(--color-black);
+  content: "";
+}
+.employees section {
+  padding-top: 3.375rem;
+  padding-left: 1.25rem;
+  padding-right: 0.5625rem;
+}
+.employees p {
+  font-size: 1.125rem;
+}
+.employees__exp {
+  padding-top: 1.75rem;
+  padding-inline: 2.1875rem;
+}
+.employees__watch-team {
+  width: 16.875rem;
+  height: 4.25rem;
+  margin-top: 2.5rem;
+  margin-left: 60.625rem;
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  border: none;
+  border-radius: 0.875rem;
+  cursor: pointer;
 }
 
 .content {
@@ -78,14 +130,14 @@
 }
 
 .button {
+  height: 4.25rem;
+  width: 14.4375rem;
+  font-family: "Space Grotesk";
+  font-size: 1.25rem;
   cursor: pointer;
   background-color: white;
   color: var(--color-dark);
-  height: 4.25rem;
-  width: 14.4375rem;
   border-radius: 0.875rem;
-  font-family: "Space Grotesk";
-  font-size: 1.25rem;
   transition: all 0.3s linear;
 }
 
@@ -97,8 +149,8 @@
 }
 .navigation__bar-ol {
   display: flex;
-  gap: 2.5rem;
   align-items: center;
+  gap: 2.5rem;
   font-size: 1.25rem;
 }
 .navigation__bar-ol a {
@@ -113,8 +165,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Space Grotesk";
   padding-block: 4.375rem;
+  font-family: "Space Grotesk";
 }
 .header__title {
   font-size: 3.125rem;
@@ -126,9 +178,9 @@
 }
 .header__button.button {
   width: 16.5rem;
-  border: none;
   color: var(--color-grey);
   background-color: var(--color-dark);
+  border: none;
   transition: all 0.3s ease-in-out;
 }
 .header__button:hover {
@@ -143,8 +195,8 @@
 .grid__container {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 2.5rem;
   width: 77.5rem;
+  gap: 2.5rem;
   margin: 0 auto;
   padding-bottom: 7.75rem;
   font-family: "Space Grotesk";
@@ -174,10 +226,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
   margin-right: 0.9375rem;
   width: 2.5625rem;
   height: 2.5625rem;
+  cursor: pointer;
   border: 0;
   border-radius: 3.125rem;
   background-color: var(--color-dark);
@@ -212,23 +264,27 @@
 
 .article {
   display: flex;
-  align-items: center;
   width: 77.5rem;
   margin: 0 auto;
-  font-family: "Space Grotesk";
   padding-top: 8.75rem;
   padding-bottom: 5rem;
+  align-items: center;
+  font-family: "Space Grotesk";
   font-size: 1.125rem;
 }
 .article__title {
   width: fit-content;
   height: 3.1875rem;
+  padding: 0.5rem;
+  margin-right: 2.5rem;
   font-size: 2.5rem;
   text-align: center;
   background-color: var(--color-grean);
   border-radius: 0.4375rem;
-  padding: 0.5rem;
-  margin-right: 2.5rem;
+}
+
+.article-mini {
+  padding-top: 6.25rem;
 }
 
 .info-proposal {
@@ -236,11 +292,11 @@
   align-items: center;
   justify-content: center;
   gap: 11.625rem;
-  font-family: "Space Grotesk";
   width: 77.5rem;
   height: 21.6875rem;
   border-radius: 2.8125rem;
   background-color: var(--color-grey);
+  font-family: "Space Grotesk";
 }
 .info-proposal h2 {
   font-size: 1.75rem;
@@ -254,14 +310,14 @@
   gap: 1.625rem;
 }
 .info-btn {
-  cursor: pointer;
-  font-family: "Space Grotesk";
   width: 18rem;
   height: 4.25rem;
+  font-family: "Space Grotesk";
+  font-size: 1rem;
   color: var(--color-grey);
+  cursor: pointer;
   border: none;
   border-radius: 0.875rem;
-  font-size: 1rem;
   background-color: var(--color-dark);
 }
 

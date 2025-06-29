@@ -9,20 +9,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Space Grotesk';
   min-height: rem(326);
-  color: var(--color-white);
-  background-color: var(--color-dark);
   padding-block: rem(60);
   border-radius: rem(45);
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  font-family: 'Space Grotesk';
+
   :last-child {
     border: none;
   }
 
   &-info {
-    font-size: rem(17);
     padding-left: rem(64);
     padding-right: rem(64);
+    font-size: rem(17);
     border-right: rem(1) solid var(--color-white);
 
     p {
@@ -33,9 +34,9 @@
   &-link {
     display: flex;
     align-items: end;
-    cursor: pointer;
     padding-top: rem(20);
     padding-bottom: rem(23);
+    cursor: pointer;
 
     p {
       padding-right: rem(15);
@@ -45,12 +46,12 @@
 }
 
 .process__block {
-  font-family: 'Space Grotesk';
+  height: rem(160);
+  margin-bottom: rem(30);
   border: rem(1) solid var(--color-black);
   border-bottom: rem(5) solid;
   border-radius: rem(45);
-  height: rem(160);
-  margin-bottom: rem(30);
+  font-family: 'Space Grotesk';
 
   &-title {
     display: flex;
@@ -75,10 +76,68 @@
   }
 
   &-btn {
+    width: rem(58);
+    height: rem(58);
     cursor: pointer;
     border-radius: rem(50);
     background-color: var(--color-white);
-    width: rem(58);
-    height: rem(58);
+  }
+}
+
+.employees {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: rem(40);
+  font-family: 'Space Grotesk';
+
+  &__block {
+    width: rem(387);
+    height: rem(331);
+    border: rem(1) solid var(--color-black);
+    border-bottom: rem(5) solid;
+    border-radius: rem(45);
+  }
+  &__info {
+    position: relative;
+    display: flex;
+    padding: rem(40) rem(35) rem(28) rem(35);
+  }
+
+  &__info::after {
+    position: absolute;
+    bottom: 0;
+    left: 9%;
+    width: rem(317);
+    border: rem(1) solid var(--color-black);
+    content: '';
+  }
+
+  section {
+    padding-top: rem(54);
+    padding-left: rem(20);
+    padding-right: rem(9);
+  }
+
+  p {
+    font-size: rem(18);
+  }
+
+  &__exp {
+    padding-top: rem(28);
+    padding-inline: rem(35);
+  }
+
+  &__watch-team {
+    width: rem(270);
+    height: rem(68);
+    margin-top: rem(40);
+    margin-left: rem(970);
+    font-family: 'Space Grotesk';
+    font-size: rem(20);
+    color: var(--color-white);
+    background-color: var(--color-dark);
+    border: none;
+    border-radius: rem(14);
+    cursor: pointer;
   }
 }

@@ -4,8 +4,8 @@
   &__container {
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap: rem(40);
     width: rem(1240);
+    gap: rem(40);
     margin: 0 auto;
     padding-bottom: rem(124);
     font-family: 'Space Grotesk';
@@ -38,10 +38,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      cursor: pointer;
       margin-right: rem(15);
       width: rem(41);
       height: rem(41);
+      cursor: pointer;
       border: 0;
       border-radius: rem(50);
       background-color: var(--color-dark);

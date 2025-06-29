@@ -1,14 +1,14 @@
 @use '../helpers/' as *;
 
 .button {
+  height: rem(68);
+  width: rem(231);
+  font-family: 'Space Grotesk';
+  font-size: rem(20);
   cursor: pointer;
   background-color: white;
   color: var(--color-dark);
-  height: rem(68);
-  width: rem(231);
   border-radius: rem(14);
-  font-family: 'Space Grotesk';
-  font-size: rem(20);
   transition: all 0.3s linear;
 }
 
@@ -20,8 +20,8 @@
 
   &-ol {
     display: flex;
-    gap: rem(40);
     align-items: center;
+    gap: rem(40);
     font-size: rem(20);
   }
 

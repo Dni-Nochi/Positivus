@@ -5,8 +5,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: 'Space Grotesk';
     padding-block: rem(70);
+    font-family: 'Space Grotesk';
   }
 
   &__title {
@@ -21,9 +21,9 @@
 
   &__button.button {
     width: rem(264);
-    border: none;
     color: var(--color-grey);
     background-color: var(--color-dark);
+    border: none;
     transition: all 0.3s ease-in-out;
   }
 

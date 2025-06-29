@@ -6,11 +6,11 @@
     align-items: center;
     justify-content: center;
     gap: rem(186);
-    font-family: 'Space Grotesk';
     width: rem(1240);
     height: rem(347);
     border-radius: rem(45);
     background-color: var(--color-grey);
+    font-family: 'Space Grotesk';
   }
 
   &-proposal h2 {
@@ -28,14 +28,14 @@
   }
 
   &-btn {
-    cursor: pointer;
-    font-family: 'Space Grotesk';
     width: rem(288);
     height: rem(68);
+    font-family: 'Space Grotesk';
+    font-size: rem(16);
     color: var(--color-grey);
+    cursor: pointer;
     border: none;
     border-radius: rem(14);
-    font-size: rem(16);
     background-color: var(--color-dark);
   }
 }

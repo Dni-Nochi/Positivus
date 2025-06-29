@@ -2,22 +2,26 @@
 
 .article {
   display: flex;
-  align-items: center;
   width: rem(1240);
   margin: 0 auto;
-  font-family: 'Space Grotesk';
   padding-top: rem(140);
   padding-bottom: rem(80);
+  align-items: center;
+  font-family: 'Space Grotesk';
   font-size: rem(18);
 
   &__title {
     width: fit-content;
     height: rem(51);
+    padding: rem(8);
+    margin-right: rem(40);
     font-size: rem(40);
     text-align: center;
     background-color: var(--color-grean);
     border-radius: rem(7);
-    padding: rem(8);
-    margin-right: rem(40);
   }
+}
+
+.article-mini {
+  padding-top: rem(100);
 }
