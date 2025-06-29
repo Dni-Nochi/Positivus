@@ -1,0 +1,84 @@
+@use '../helpers/' as *;
+
+.main {
+  width: rem(1240);
+  margin: 0 auto;
+}
+
+.studies__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Grotesk';
+  min-height: rem(326);
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  padding-block: rem(60);
+  border-radius: rem(45);
+  :last-child {
+    border: none;
+  }
+
+  &-info {
+    font-size: rem(17);
+    padding-left: rem(64);
+    padding-right: rem(64);
+    border-right: rem(1) solid var(--color-white);
+
+    p {
+      font-weight: 200;
+    }
+  }
+
+  &-link {
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+    padding-top: rem(20);
+    padding-bottom: rem(23);
+
+    p {
+      padding-right: rem(15);
+      color: var(--color-grean);
+    }
+  }
+}
+
+.process__block {
+  font-family: 'Space Grotesk';
+  border: rem(1) solid var(--color-black);
+  border-bottom: rem(5) solid;
+  border-radius: rem(45);
+  height: rem(160);
+  margin-bottom: rem(30);
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: rem(41);
+    padding-inline: rem(60);
+
+    article {
+      display: flex;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: rem(60);
+      padding-right: rem(35);
+    }
+
+    h2 {
+      font-size: rem(30);
+    }
+  }
+
+  &-btn {
+    cursor: pointer;
+    border-radius: rem(50);
+    background-color: var(--color-white);
+    width: rem(58);
+    height: rem(58);
+  }
+}

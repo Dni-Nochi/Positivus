@@ -1,5 +1,7 @@
 @use './helpers/' as *;
 
+@use './Styles-for-index/main';
+
 @use './Styles-for-index/content';
 @use './Styles-for-index/navigationBar';
 @use './Styles-for-index/headerInfo';
