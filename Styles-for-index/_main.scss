@@ -40,7 +40,7 @@
 
     p {
       padding-right: rem(15);
-      color: var(--color-grean);
+      color: var(--color-green);
     }
   }
 }
@@ -139,5 +139,33 @@
     border: none;
     border-radius: rem(14);
     cursor: pointer;
+  }
+}
+
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: rem(773);
+  margin-bottom: rem(140);
+  background-color: var(--color-grey);
+  border-radius: rem(45);
+
+  &__filing {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__check {
+    display: flex;
+    padding-bottom: rem(40);
+  }
+
+  &__input {
+    width: rem(556);
+    height: rem(59);
+    margin-bottom: rem(25);
+    padding-left: rem(30);
+    border-radius: rem(14);
   }
 }

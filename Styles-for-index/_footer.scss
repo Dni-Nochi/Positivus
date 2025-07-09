@@ -1,0 +1,108 @@
+@use '../helpers/' as *;
+
+.footer {
+  width: rem(1240);
+  height: rem(515);
+  margin: 0 auto;
+  border-top-left-radius: rem(45);
+  border-top-right-radius: rem(45);
+  background-color: var(--color-dark);
+  font-family: 'Space Grotesk';
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: rem(1120);
+    margin: 0 auto;
+    padding-top: rem(58);
+    padding-bottom: rem(66);
+
+    ul {
+      display: flex;
+      gap: rem(40);
+      padding-inline: rem(155);
+    }
+  }
+
+  &__links {
+    color: var(--color-white);
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+  }
+
+  &__links:hover {
+    color: var(--color-green);
+  }
+
+  &__socials {
+    display: flex;
+    gap: rem(20);
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: rem(1120);
+    margin: 0 auto;
+    padding-bottom: rem(50);
+    border-bottom: rem(1) solid var(--color-white);
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    color: var(--color-white);
+  }
+
+  &__join {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: rem(20);
+    width: rem(634);
+    height: rem(184);
+    margin-left: rem(155);
+    border-radius: rem(14);
+    background-color: var(--color-grey-2);
+  }
+
+  &__email {
+    font-family: 'Space Grotesk';
+    width: rem(285);
+    height: rem(67);
+    padding-left: rem(35);
+    color: var(--color-white);
+    border: rem(1) solid var(--color-white);
+    border-radius: rem(14);
+    background-color: var(--color-grey-2);
+  }
+
+  &__email::placeholder {
+    color: var(--color-white);
+  }
+
+  &__btn {
+    width: rem(249);
+    height: rem(68);
+    border-radius: rem(14);
+    background-color: var(--color-green);
+    cursor: pointer;
+    font-family: 'Space Grotesk';
+  }
+
+  &__end {
+    display: flex;
+    width: rem(1120);
+    padding-top: rem(50);
+    margin: 0 auto;
+    color: var(--color-white);
+
+    a {
+      padding-left: rem(40);
+    }
+  }
+}
